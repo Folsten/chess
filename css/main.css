@@ -1,0 +1,55 @@
+.welcomeSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+  height: 700px;
+}
+
+.welcomeSection__content {
+  display: flex;
+  flex-direction: column;
+  width: 542px;
+  padding-top: 62px;
+}
+
+.welcomeSection__h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.welcomeSection__h1Center {
+  align-self: center;
+}
+
+.welcomeSection__h1Right {
+  align-self: flex-end;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 245.17px;
+  height: 36px;
+}
+
+.logo__horse {
+  float: left;
+  width: 21.65px;
+  height: 31.18px;
+}
+
+.logo__horse:not(:first-child) {
+  margin-left: 1.73px;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  color: rgba(89, 86, 83, 1);
+  font-size: 16.65px;
+  line-height: 17.98px;
+  font-weight: 700;
+  padding-left: 6.35px;
+}
