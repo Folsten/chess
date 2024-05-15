@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chess</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Клуб четырех коней</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <section class="welcomeSection">
@@ -28,23 +28,26 @@
             <span class="welcomeSection__h1Center">в столицу</span>
             <span class="welcomeSection__h1Right">земного шара</span>
           </h1>
-          <h2 class="welcomeSection_h2">
+          <h2 class="welcomeSection__h2">
             Оплатите взнос на телеграммы для организации
             <br />
             Международного васюкинского турнира по шахматам
           </h2>
-          <button class="primaryButton welcomeSection__primaryButton">
-            Поддержать
-            <br />
-            шахматную мысль
-          </button>
-          <button class="secondaryButton welcomeSection__secondaryButton">
-            Подробнее
-            <br />
-            о турнире
-          </button>
+          <div class="welcomeSection__buttons">
+            <a href="#" class="primaryButton primaryButton_theme_dark welcomeSection__darkButton">
+              Поддержать
+              <br />
+              шахматную мысль
+            </a>
+            <a href="#" class="primaryButton primaryButton_theme_light welcomeSection__lightButton">
+              Подробнее
+              <br />
+              о турнире
+            </a>
+          </div>
         </div>
       </div>
+      <div class="redLine"></div>
     </section>
     <script src="./js/main.js"></script>
   </body>

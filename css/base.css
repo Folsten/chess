@@ -11,6 +11,7 @@ font-style: normal; */
 
 body {
   font-family: "Golos Text", sans-serif;
+  color: rgba(31, 31, 31, 1);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
