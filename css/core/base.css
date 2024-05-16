@@ -17,6 +17,11 @@ body {
   font-style: normal;
 }
 
+a {
+	text-decoration: none;
+	color: rgba(31, 31, 31, 1);
+}
+
 .container {
   width: 1222px;
   margin: 0 72px 0 72px;

@@ -10,6 +10,7 @@
     font-weight: 500;
     line-height: 20.8px;
     cursor: pointer;
+    transition: 0.25s;
     padding: 0;
   }
   
@@ -17,8 +18,18 @@
     background: rgba(31, 31, 31, 1);
     border: none;
     color: white;
+
+    &:hover {
+      color: rgba(31, 31, 31, 1);
+      background: rgba(251, 206, 81, 1);
+    }
   }
   
   .primaryButton_theme_light {
     border: 2px solid rgba(31, 31, 31, 1);
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(31, 31, 31, 1);
+    }
   }

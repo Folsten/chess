@@ -31,7 +31,6 @@
 .welcomeSection__h2 {
   font-size: 18px;
   color: rgba(49, 49, 49, 1);
-  height: 70px;
   line-height: 23.4px;
   text-align: center;
   margin-top: 24px;
@@ -56,7 +55,20 @@
   column-gap: 16px;
 }
 
+.welcomeSection__firstButtonLineBreaker {
+}
+
+.welcomeSection__secondButtonLineBreaker {
+}
+
 /* Media Queries */
+
+/* Для Retina дисплеев */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .welcomeSection {
+    background-image: url("../img/welcome-section-bg-pc@2x.jpg");
+  }
+}
 
 @media screen and (max-width: 1359px) {
   .welcomeSection {
@@ -77,9 +89,30 @@
     font-size: 36px;
     line-height: 39.6px;
   }
+  .welcomeSection__buttons {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+    padding-top: 33px;
+  }
+  .welcomeSection__h1Center {
+    padding-left: 7px;
+  }
+  .welcomeSection__firstButton {
+    height: 47px;
+  }
+  .welcomeSection__secondButton {
+    height: 47px;
+  }
+  .welcomeSection__firstButtonLineBreaker {
+    display: none;
+  }
+  .welcomeSection__secondButtonLineBreaker {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 639px) {}
+@media screen and (max-width: 639px) {
+}
 
 @media screen and (max-width: 375px) {
   .welcomeSection {
@@ -93,5 +126,12 @@
   }
   .welcomeSection__h2LineBreaker {
     display: block;
+  }
+}
+
+/* Для Retina дисплеев */
+@media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+  .welcomeSection {
+    background-image: url("../img/welcome-section-bg-mobile@2x.jpg");
   }
 }
