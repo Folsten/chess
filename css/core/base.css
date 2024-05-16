@@ -9,6 +9,10 @@ font-style: normal; */
 font-weight: 400;
 font-style: normal; */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Golos Text", sans-serif;
   color: rgba(31, 31, 31, 1);

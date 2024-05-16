@@ -55,12 +55,6 @@
   column-gap: 16px;
 }
 
-.welcomeSection__firstButtonLineBreaker {
-}
-
-.welcomeSection__secondButtonLineBreaker {
-}
-
 /* Media Queries */
 
 /* Для Retina дисплеев */
@@ -102,6 +96,9 @@
   }
   .welcomeSection__secondButton {
     height: 47px;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 90%;
+    border: none;
   }
   .welcomeSection__firstButtonLineBreaker {
     display: none;
@@ -116,6 +113,7 @@
 
 @media screen and (max-width: 375px) {
   .welcomeSection {
+    /* На мобилке с целью оптимизации мы полностью отказываемся от фоновых анимаций и вместо множественного фона используем фон единой картинкой */
     background-image: url("../img/welcome-section-bg-mobile.jpg");
     height: 774px;
     background-size: cover;
@@ -129,7 +127,7 @@
   }
 }
 
-/* Для Retina дисплеев */
+/* Для Retina дисплеев мы подгрузим тот же самый фон, но с х2 пикселизацией */
 @media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   .welcomeSection {
     background-image: url("../img/welcome-section-bg-mobile@2x.jpg");

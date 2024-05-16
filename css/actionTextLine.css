@@ -1,0 +1,29 @@
+.actionTextLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(245, 73, 50, 1);
+}
+
+.actionTextLine__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.actionTextLine__text {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  line-height: 24.2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.actionTextLine__delimeter {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 999px;
+  margin: 0px 9px 0px 9px;
+}
