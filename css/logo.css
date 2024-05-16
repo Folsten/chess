@@ -1,0 +1,58 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 245.17px;
+  height: 36px;
+}
+
+.logo__horse {
+  float: left;
+  width: 21.65px;
+  height: 31.18px;
+}
+
+.logo__horse:not(:first-child) {
+  margin-left: 1.73px;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  color: rgba(89, 86, 83, 1);
+  font-size: 16.65px;
+  line-height: 17.98px;
+  font-weight: 700;
+  padding-top: 1px;
+  padding-left: 6.35px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1359px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 639px) {
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    height: 32px;
+  }
+
+  .logo__horse {
+    width: 18.75px;
+    height: 27px;
+  }
+
+  .logo__horse:not(:first-child) {
+    margin-left: 1.5px;
+  }
+
+  .logo__text {
+    font-size: 14.42px;
+    line-height: 15.57px;
+    padding-left: 5.5px;
+  }
+}

@@ -1,0 +1,97 @@
+.welcomeSection {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url("../img/welcome-section-bg-pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding-top: 26px;
+}
+
+.welcomeSection__content {
+  display: flex;
+  flex-direction: column;
+  width: 542px;
+  padding-top: 62px;
+}
+
+.welcomeSection__h1 {
+  display: flex;
+  flex-direction: column;
+  color: rgba(49, 49, 49, 1);
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.welcomeSection__h2 {
+  font-size: 18px;
+  color: rgba(49, 49, 49, 1);
+  height: 70px;
+  line-height: 23.4px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.welcomeSection__h2LineBreaker {
+  display: none;
+}
+
+.welcomeSection__h1Center {
+  align-self: center;
+}
+
+.welcomeSection__h1Right {
+  align-self: flex-end;
+}
+
+.welcomeSection__buttons {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1359px) {
+  .welcomeSection {
+    background-position: 28%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .welcomeSection {
+    background-position: 40%;
+    padding-top: 17px;
+  }
+  .welcomeSection__content {
+    padding-top: 42px;
+    width: 335px;
+  }
+  .welcomeSection__h1 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
+
+@media screen and (max-width: 639px) {}
+
+@media screen and (max-width: 375px) {
+  .welcomeSection {
+    background-image: url("../img/welcome-section-bg-mobile.jpg");
+    height: 774px;
+    background-size: cover;
+  }
+  .welcomeSection__h2 {
+    text-align: left;
+    height: 69px;
+  }
+  .welcomeSection__h2LineBreaker {
+    display: block;
+  }
+}
