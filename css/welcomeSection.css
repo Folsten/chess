@@ -10,6 +10,10 @@
   padding-top: 26px;
 }
 
+.welcomeSection__container {
+  width: 100%;
+}
+
 .welcomeSection__content {
   display: flex;
   flex-direction: column;

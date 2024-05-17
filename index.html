@@ -13,47 +13,51 @@
     <link rel="stylesheet" href="./css/primaryButton.css" />
     <link rel="stylesheet" href="./css/welcomeSection.css" />
     <link rel="stylesheet" href="./css/actionTextLine.css" />
+    <link rel="stylesheet" href="./css/tournamentSection.css" />
+    <link rel="stylesheet" href="./css/chessSession.css" />
   </head>
   <body>
     <section class="welcomeSection">
       <div class="container">
-        <div class="logo">
-          <div class="logo__horses">
-            <img class="logo__horse" src="./img/horse.svg" alt="horse 1" />
-            <img class="logo__horse" src="./img/horse.svg" alt="horse 2" />
-            <img class="logo__horse" src="./img/horse.svg" alt="horse 3" />
-            <img class="logo__horse" src="./img/horse.svg" alt="horse 4" />
+        <div class="welcomeSection__container">
+          <div class="logo">
+            <div class="logo__horses">
+              <img class="logo__horse" src="./img/horse.svg" alt="horse 1" />
+              <img class="logo__horse" src="./img/horse.svg" alt="horse 2" />
+              <img class="logo__horse" src="./img/horse.svg" alt="horse 3" />
+              <img class="logo__horse" src="./img/horse.svg" alt="horse 4" />
+            </div>
+            <p class="logo__text">Клуб<br />четырех коней</p>
           </div>
-          <p class="logo__text">Клуб<br />четырех коней</p>
-        </div>
-        <div class="welcomeSection__content">
-          <h1 class="welcomeSection__h1">
-            <span>Превратите</span>
-            <span>уездный город</span>
-            <span class="welcomeSection__h1Center">в столицу</span>
-            <span class="welcomeSection__h1Right">земного шара</span>
-          </h1>
-          <h2 class="welcomeSection__h2">
-            Оплатите взнос на телеграммы<br
-              class="welcomeSection__h2LineBreaker"
-            />
-            для организации Международного васюкинского турнира по шахматам
-          </h2>
-          <div class="welcomeSection__buttons">
-            <a
-              href="#"
-              class="primaryButton primaryButton_theme_dark welcomeSection__firstButton"
-            >
-              Поддержать<br class="welcomeSection__firstButtonLineBreaker" />
-              шахматную мысль
-            </a>
-            <a
-              href="#"
-              class="primaryButton primaryButton_theme_light welcomeSection__secondButton"
-            >
-              Подробнее <br class="welcomeSection__secondButtonLineBreaker" />о
-              турнире
-            </a>
+          <div class="welcomeSection__content">
+            <h1 class="welcomeSection__h1">
+              <span>Превратите</span>
+              <span>уездный город</span>
+              <span class="welcomeSection__h1Center">в столицу</span>
+              <span class="welcomeSection__h1Right">земного шара</span>
+            </h1>
+            <h2 class="welcomeSection__h2">
+              Оплатите взнос на телеграммы<br
+                class="welcomeSection__h2LineBreaker"
+              />
+              для организации Международного васюкинского турнира по шахматам
+            </h2>
+            <div class="welcomeSection__buttons">
+              <a
+                href="#"
+                class="primaryButton primaryButton_theme_dark welcomeSection__firstButton"
+              >
+                Поддержать<br class="welcomeSection__firstButtonLineBreaker" />
+                шахматную мысль
+              </a>
+              <a
+                href="#"
+                class="primaryButton primaryButton_theme_light welcomeSection__secondButton"
+              >
+                Подробнее
+                <br class="welcomeSection__secondButtonLineBreaker" />о турнире
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -75,6 +79,90 @@
         <div class="actionTextLine__delimeter"></div>
       </div>
     </marquee>
+    <section class="tournamentSection">
+      <div class="container">
+        <div class="tournamentSection__firstPartContainer">
+          <div class="tournamentSection__firstPartText">
+            Чтобы поддержать<br />
+            международный васюкинский турнир
+            <img
+              class="tournamentSection__firstPartMobileImage"
+              src="./img/chessParty.png"
+              alt="A man is playing chess"
+            />
+            посетите лекцию на тему:
+            <span class="tournamentSection__firstPartActionText"
+              >«Плодотворная дебютная идея»</span
+            >
+          </div>
+          <img
+            class="tournamentSection__firstPartDesktopImage"
+            src="./img/chessParty.png"
+            alt="A man is playing chess"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="tournamentSection__secondPartContainer">
+          <div class="chessPlayerComposition">
+            <img
+              src="./img/tournament/canvas.png"
+              class="chessPlayerComposition__canvas"
+            />
+            <img
+              src="./img/tournament/money.png"
+              class="chessPlayerComposition__money"
+            />
+            <img
+              src="./img/tournament/bigStar.svg"
+              class="chessPlayerComposition__bigStar"
+            />
+            <img
+              src="./img/tournament/chessPlayer.png"
+              class="chessPlayerComposition__chessPlayer"
+            />
+            <img
+              src="./img/tournament/smallStar.svg"
+              class="chessPlayerComposition__smallStar"
+            />
+            <img
+              src="./img/tournament/horseFigure.png"
+              class="chessPlayerComposition__horseFigure"
+            />
+            <img
+              src="./img/tournament/hand.png"
+              class="chessPlayerComposition__hand"
+            />
+            <img
+              src="./img/tournament/texture.png"
+              class="chessPlayerComposition__texture"
+            />
+          </div>
+          <div class="chessSession">
+            <p class="chessSession__title">
+              И сеанс
+              <span class="chessSession__titleAction"
+                >одновременной игры в шахматы на 160 досках</span
+              >
+              гроссмейстера О. Бендера
+            </p>
+            <div class="chessSession__table">
+              <div class="chessSession__tableType">Место проведеня:</div>
+              <div class="chessSession__tableValue">Клуб «Картонажник»</div>
+              <div class="chessSession__tableType item_3">Дата и время мероприятия:</div>
+              <div class="chessSession__tableValue item_4">22 июня 1927 г. в 18:00</div>
+              <div class="chessSession__tableType item_5">Стоимость входных билетов:</div>
+              <div class="chessSession__tableValue item_6">20 коп.</div>
+              <div class="chessSession__tableType chessSession__tableRowPart1">Плата за игру:</div>
+              <div class="chessSession__tableValue chessSession__tableRowPart2">50 коп.</div>
+              <div class="chessSession__tableType item_9">Взнос на телеграммы:</div>
+              <div class="chessSession__tableValue item_10"><span class="chessSession__tableCrossedText">100 руб.</span>21 руб. 16 коп.</div>
+            </div>
+            <div class="chessSession__referenceText">По всем вопросам обращаться в администрацию к К. Михельсону</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>

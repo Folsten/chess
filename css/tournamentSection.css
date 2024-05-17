@@ -1,0 +1,190 @@
+.tournamentSection {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tournamentSection__firstPartContainer {
+  display: flex;
+  align-items: center;
+}
+
+.tournamentSection__firstPartText {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 48.6px;
+  flex: 1;
+}
+
+.tournamentSection__firstPartActionText {
+  font-weight: 700;
+  color: rgba(245, 73, 50, 1);
+}
+
+.tournamentSection__firstPartDesktopImage {
+  display: flex;
+  width: 394px;
+  height: 250px;
+  margin-left: 20px;
+}
+
+.tournamentSection__firstPartMobileImage {
+  display: none;
+  width: 394px;
+  height: 250px;
+  margin-top: 24px;
+  margin-bottom: 24.44px;
+}
+
+.tournamentSection__secondPartContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.chessPlayerComposition {
+  position: relative;
+  left: -26px;
+  margin-bottom: 100px;
+  min-width: 528px;
+  height: 609px;
+  object-fit: cover;
+  /* transform: scale(70.8%, 68.96%); */
+}
+
+.chessPlayerComposition__texture {
+  position: relative;
+  overflow: hidden;
+  mask: url("../img/tournament/canvas.png") no-repeat left 49px top 86px,
+    url("../img/tournament/money.png") no-repeat right 28px top 69px,
+    url("../img/tournament/bigStar.svg") no-repeat left -1px top 19px,
+    url("../img/tournament/smallStar.svg") no-repeat left 14px bottom 50px,
+    url("../img/tournament/chessPlayer.png") no-repeat left 102px top 135px,
+    url("../img/tournament/horseFigure.png") no-repeat left 90px bottom 35px,
+    url("../img/tournament/hand.png") no-repeat right 22px bottom -62px;
+  mix-blend-mode: color-burn;
+  width: 100%;
+  height: 100%;
+}
+
+.chessPlayerComposition__canvas {
+  position: absolute;
+  left: 49px;
+  top: 86px;
+}
+
+.chessPlayerComposition__money {
+  position: absolute;
+  right: 28px;
+  top: 69px;
+}
+
+.chessPlayerComposition__bigStar {
+  position: absolute;
+  top: 19px;
+  left: -1px;
+}
+
+.chessPlayerComposition__chessPlayer {
+  position: absolute;
+  left: 102px;
+  top: 135px;
+}
+
+.chessPlayerComposition__smallStar {
+  position: absolute;
+  left: 13px;
+  bottom: 50px;
+}
+
+.chessPlayerComposition__horseFigure {
+  position: absolute;
+  left: 90px;
+  bottom: 35px;
+}
+
+.chessPlayerComposition__hand {
+  position: absolute;
+  right: 22px;
+  bottom: -62px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1359px) {
+  .chessPlayerComposition {
+    width: auto !important;
+    height: auto !important
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tournamentSection__firstPartContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tournamentSection__firstPartText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tournamentSection__firstPartDesktopImage {
+    display: none;
+  }
+
+  .tournamentSection__firstPartMobileImage {
+    display: flex;
+    align-self: center;
+    width: 394px;
+  }
+
+  
+}
+
+@media screen and (max-width: 767px) {
+  .tournamentSection {
+    margin-top: 48px;
+  }
+
+  .tournamentSection__firstPartText {
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .tournamentSection__firstPartMobileImage {
+    width: 335px;
+    height: 212.56px;
+  }
+}
+
+/* .tournamentSection__secondPartImage {
+  margin-left: 45px;
+  width: 609px;
+  height: 528px;
+  mask: 
+  url('../img/tournament/Vector\ 95.svg') no-repeat center top 0px / 528.99px 343.81px;
+  background: 
+  url('../img/tournament/krfffa.png') no-repeat center center / 100% 100%, 
+  url('../img/tournament/Vector 95.svg') no-repeat 0% 0% / 88% 80%;
+  background-blend-mode: color-burn;
+} */
+
+
+
+
+
+
+
+
+
+.karpan {
+  width: 100%;
+}
