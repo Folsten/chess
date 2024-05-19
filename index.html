@@ -6,15 +6,15 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Клуб четырех коней</title>
     <!-- core css -->
-    <link rel="stylesheet" href="./css/core//reset.css" />
+    <link rel="stylesheet" href="./css/core/reset.css" />
     <link rel="stylesheet" href="./css/core/base.css" />
     <!-- blocks css -->
     <link rel="stylesheet" href="./css/logo.css" />
     <link rel="stylesheet" href="./css/primaryButton.css" />
-    <link rel="stylesheet" href="./css/welcomeSection.css" />
     <link rel="stylesheet" href="./css/actionTextLine.css" />
+    <link rel="stylesheet" href="./css/welcomeSection.css" />
     <link rel="stylesheet" href="./css/tournamentSection.css" />
-    <link rel="stylesheet" href="./css/chessSession.css" />
+    <link rel="stylesheet" href="./css/vasukiSection.css" />
   </head>
   <body>
     <section class="welcomeSection">
@@ -22,10 +22,10 @@
         <div class="welcomeSection__container">
           <div class="logo">
             <div class="logo__horses">
-              <img class="logo__horse" src="./img/horse.svg" alt="horse 1" />
-              <img class="logo__horse" src="./img/horse.svg" alt="horse 2" />
-              <img class="logo__horse" src="./img/horse.svg" alt="horse 3" />
-              <img class="logo__horse" src="./img/horse.svg" alt="horse 4" />
+              <img class="logo__horse" src="./img/logo/horse.svg" alt="horse" />
+              <img class="logo__horse" src="./img/logo/horse.svg" alt="horse" />
+              <img class="logo__horse" src="./img/logo/horse.svg" alt="horse" />
+              <img class="logo__horse" src="./img/logo/horse.svg" alt="horse" />
             </div>
             <p class="logo__text">Клуб<br />четырех коней</p>
           </div>
@@ -81,13 +81,13 @@
     </marquee>
     <section class="tournamentSection">
       <div class="container">
-        <div class="tournamentSection__firstPartContainer">
+        <div class="tournamentSection__firstPartWrapper">
           <div class="tournamentSection__firstPartText">
             Чтобы поддержать<br />
             международный васюкинский турнир
             <img
               class="tournamentSection__firstPartMobileImage"
-              src="./img/chessParty.png"
+              src="./img/tournamentSection/chessParty.png"
               alt="A man is playing chess"
             />
             посетите лекцию на тему:
@@ -97,68 +97,139 @@
           </div>
           <img
             class="tournamentSection__firstPartDesktopImage"
-            src="./img/chessParty.png"
+            src="./img/tournamentSection/chessParty.png"
             alt="A man is playing chess"
           />
         </div>
       </div>
-      <div class="container">
-        <div class="tournamentSection__secondPartContainer">
-          <div class="chessPlayerComposition">
+      <div class="container tournamentSection__secondPartContainer">
+        <div class="tournamentSection__secondPartWrapper">
+          <div class="tournamentSection__chessPlayerComposition">
             <img
-              src="./img/tournament/canvas.png"
-              class="chessPlayerComposition__canvas"
-            />
-            <img
-              src="./img/tournament/money.png"
-              class="chessPlayerComposition__money"
-            />
-            <img
-              src="./img/tournament/bigStar.svg"
-              class="chessPlayerComposition__bigStar"
-            />
-            <img
-              src="./img/tournament/chessPlayer.png"
-              class="chessPlayerComposition__chessPlayer"
-            />
-            <img
-              src="./img/tournament/smallStar.svg"
-              class="chessPlayerComposition__smallStar"
-            />
-            <img
-              src="./img/tournament/horseFigure.png"
-              class="chessPlayerComposition__horseFigure"
-            />
-            <img
-              src="./img/tournament/hand.png"
-              class="chessPlayerComposition__hand"
-            />
-            <img
-              src="./img/tournament/texture.png"
-              class="chessPlayerComposition__texture"
+              class="tournamentSection__chessPlayerCompositionTexture"
+              src="./img/tournamentSection/texture.png"
+              alt="texture"
             />
           </div>
-          <div class="chessSession">
-            <p class="chessSession__title">
+          <div class="tournamentSection__sessionWrapper">
+            <div class="tournamentSection__sessionTitle">
               И сеанс
-              <span class="chessSession__titleAction"
-                >одновременной игры в шахматы на 160 досках</span
+              <span class="tournamentSection__sessionTitleAction"
+                >одновременной игры
+                <br class="tournamentSection__sessionTitleActionLineBreaker" />в шахматы на
+                160 досках</span
               >
-              гроссмейстера О. Бендера
-            </p>
-            <div class="chessSession__table">
-              <div class="chessSession__tableType">Место проведеня:</div>
-              <div class="chessSession__tableValue">Клуб «Картонажник»</div>
-              <div class="chessSession__tableType item_3">Дата и время мероприятия:</div>
-              <div class="chessSession__tableValue item_4">22 июня 1927 г. в 18:00</div>
-              <div class="chessSession__tableType item_5">Стоимость входных билетов:</div>
-              <div class="chessSession__tableValue item_6">20 коп.</div>
-              <div class="chessSession__tableType chessSession__tableRowPart1">Плата за игру:</div>
-              <div class="chessSession__tableValue chessSession__tableRowPart2">50 коп.</div>
-              <div class="chessSession__tableType item_9">Взнос на телеграммы:</div>
-              <div class="chessSession__tableValue item_10"><span class="chessSession__tableCrossedText">100 руб.</span>21 руб. 16 коп.</div>
+              гроссмейстера <br class="tournamentSection__sessionTitleLineBreaker" />О.
+              Бендера
             </div>
-            <div class="chessSession__referenceText">По всем вопросам обращаться в администрацию к К. Михельсону</div>
+            <div class="tournamentSection__sessionTable">
+              <div class="tournamentSection__sessionTableType">Место проведения:</div>
+              <div class="tournamentSection__sessionTableValue">Клуб «Картонажник»</div>
+              <div class="tournamentSection__sessionTableType">
+                Дата и время мероприятия:
+              </div>
+              <div class="tournamentSection__sessionTableValue">
+                22 июня 1927 г. в 18:00
+              </div>
+              <div class="tournamentSection__sessionTableType">
+                Стоимость входных билетов:
+              </div>
+              <div class="tournamentSection__sessionTableValue">20 коп.</div>
+              <div class="tournamentSection__sessionTableType tournamentSection__sessionTableRowPart1">
+                Плата за игру:
+              </div>
+              <div class="tournamentSection__sessionTableValue tournamentSection__sessionTableRowPart2">
+                50 коп.
+              </div>
+              <div class="tournamentSection__sessionTableType">
+                Взнос на телеграммы:
+              </div>
+              <div class="tournamentSection__sessionTableValue tournamentSection__sessionTableValueLast">
+                <span class="tournamentSection__sessionTableCrossedText">100 руб.</span>21
+                руб. 16 коп.
+              </div>
+            </div>
+            <div class="tournamentSection__sessionReferenceText">
+              По всем вопросам обращаться в администрацию к К. Михельсону
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vasukiSection">
+      <div class="container">
+        <div class="vasukiSection__titleWrapper">
+          <div class="vasukiSection__title">
+            Этапы преображения <br />васюков
+            <div class="vasukiSection__subTitle">
+              Будущие источники обогащения васюкинцев
+            </div>
+          </div>
+        </div>
+        <div class="vasukiSection__slider">
+          <div class="vasukiSection__plates">
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">1</div>
+                <div class="vasukiSection__platesPlateText">
+                  Строительство железнодорожной магистрали Москва-Васюки
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">2</div>
+                <div class="vasukiSection__platesPlateText">
+                  Открытие фешенебельной гостиницы «Проходная пешка» и других
+                  небоскрёбов
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">3</div>
+                <div class="vasukiSection__platesPlateText">
+                  Поднятие сельского хозяйства в радиусе на тысячу километров:
+                  производство овощей, фруктов, икры, шоколадных конфет
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">4</div>
+                <div class="vasukiSection__platesPlateText">
+                  Строительство дворца для турнира
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">5</div>
+                <div class="vasukiSection__platesPlateText">
+                  Размещение гаражей для гостевого автотранспорта
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">6</div>
+                <div class="vasukiSection__platesPlateText">
+                  Постройка сверхмощной радиостанции для передачи всему миру
+                  сенсационных результатов
+                </div>
+              </div>
+            </div>
+            <div class="vasukiSection__platesPlate">
+              <div class="vasukiSection__platesPlateWrapper">
+                <div class="vasukiSection__platesPlateNumber">7</div>
+                <div class="vasukiSection__platesPlateText">
+                  Создание аэропорта «Большие Васюки» с регулярным отправлением
+                  почтовых самолётов и дирижаблей во все концы света, включая
+                  Лос-Анжелос и Мельбурн
+                </div>
+                <img class="vasukiSection__plane" src="./img/plane.png" alt="a plane"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

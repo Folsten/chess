@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  background-image: url("../img/welcome-section-bg-pc.jpg");
+  background-image: url("../img/welcomeSection/backgroundPc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,7 +64,7 @@
 /* Для Retina дисплеев */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .welcomeSection {
-    background-image: url("../img/welcome-section-bg-pc@2x.jpg");
+    background-image: url("../img/welcomeSection/backgroundPc@x2.jpg");
   }
 }
 
@@ -118,7 +118,7 @@
 @media screen and (max-width: 375px) {
   .welcomeSection {
     /* На мобилке с целью оптимизации мы полностью отказываемся от фоновых анимаций и вместо множественного фона используем фон единой картинкой */
-    background-image: url("../img/welcome-section-bg-mobile.jpg");
+    background-image: url("../img/welcomeSection/backgroundMobile.jpg");
     height: 774px;
     background-size: cover;
   }
@@ -134,6 +134,6 @@
 /* Для Retina дисплеев мы подгрузим тот же самый фон, но с х2 пикселизацией */
 @media screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   .welcomeSection {
-    background-image: url("../img/welcome-section-bg-mobile@2x.jpg");
+    background-image: url("../img/welcomeSection/backgroundMobile@x2.jpg");
   }
 }
