@@ -2,10 +2,8 @@
   display: flex;
   position: relative;
   justify-content: center;
-  background-image: url("../img/welcomeSection/backgroundPc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url("../img/welcomeSection/backgroundPc.jpg") center / cover
+    no-repeat;
   height: 700px;
   padding-top: 26px;
 }
