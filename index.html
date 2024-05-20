@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="./css/logo.css" />
     <link rel="stylesheet" href="./css/primaryButton.css" />
     <link rel="stylesheet" href="./css/actionTextLine.css" />
+    <link rel="stylesheet" href="./css/sliderSwitchButton.css" />
     <link rel="stylesheet" href="./css/welcomeSection.css" />
     <link rel="stylesheet" href="./css/tournamentSection.css" />
     <link rel="stylesheet" href="./css/vasukiSection.css" />
+    <link rel="stylesheet" href="./css/participantsSection.css" />
   </head>
   <body>
     <section class="welcomeSection">
@@ -179,6 +181,11 @@
           </div>
         </div>
         <div class="vasukiSection__slider">
+          <img
+            class="vasukiSection__planeSmallScreen"
+            src="./img/vasukiSection/mobilePlane.png"
+            alt="a plane"
+          />
           <div class="vasukiSection__plates">
             <div class="vasukiSection__platesPlate">
               <div class="vasukiSection__platesPlateWrapper">
@@ -241,16 +248,40 @@
                   Лос-Анжелос и Мельбурн
                 </div>
                 <img
-                  class="vasukiSection__plane"
-                  src="./img/vasukiSection/plane.png"
+                  class="vasukiSection__planeBigScreen"
+                  src="./img/vasukiSection/desktopPlane.png"
                   alt="a plane"
                 />
               </div>
             </div>
           </div>
+          <div class="vasukiSection__sliderPagination">
+            <div
+              class="sliderSwitchButton sliderSwitchButton_disabled vasukiSection__sliderSwitchButton"
+            >
+              <img
+                src="./img/sliderSwitchButton/arrow-left.svg"
+                class="sliderSwitchButton__arrow"
+              />
+            </div>
+            <div class="vasukiSection__sliderPaginationSteps"></div>
+            <div class="sliderSwitchButton vasukiSection__sliderSwitchButton">
+              <img
+                src="./img/sliderSwitchButton/arrow-right.svg"
+                class="sliderSwitchButton__arrow"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <script src="./js/main.js"></script>
+    <section class="participantsSection">
+      <div class="container">
+        <div class="participantsSection__headWrapper">
+          <div class="participantsSection__title">Участники турнира</div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

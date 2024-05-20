@@ -44,7 +44,7 @@
 .tournamentSection__secondPartWrapper {
   display: flex;
   width: 100%;
-  margin-top: 17px;
+  margin-top: 20px;
 }
 
 /* Для десктопа свёрстано мультибэкграундом, потому что судя по всему в дизайне подразумевалась возможность анимировать части изображения */

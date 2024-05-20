@@ -1,0 +1,19 @@
+.sliderSwitchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 99px;
+  cursor: pointer;
+  background-color: rgba(49, 49, 49, 1);
+}
+
+.sliderSwitchButton__arrow {
+  width: 13.85px;
+  height: 15px;
+}
+
+.sliderSwitchButton_disabled {
+  background-color: rgba(214, 214, 214, 1);
+}
